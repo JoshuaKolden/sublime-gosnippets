@@ -103,7 +103,7 @@ if err := json.NewDecoder(${3:r}).Decode(&${1:data}); err != nil {
 
 ```
 
-json.NewDecoder:
+json.NewEncoder:
 ```go
 
 var ${1:data} ${2:interface{}}
