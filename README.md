@@ -83,6 +83,72 @@ func init() {
 
 ```
 
+ioutil.NopCloser:
+```go
+
+${1:rc} := ioutil.NopCloser(${2:r})
+
+```
+
+ioutil.ReadAll:
+```go
+
+${1:b}, err := ioutil.ReadAll(${2:r})
+if err != nil {
+	${3:log.Fatal(err)}
+}
+
+```
+
+ioutil.ReadDir:
+```go
+
+${1:files}, err := ioutil.ReadDir(${2:dir})
+if err != nil {
+	${3:log.Fatal(err)}
+}
+
+```
+
+ioutil.ReadFile:
+```go
+
+${1:b}, err := ioutil.ReadFile(${2:file})
+if err != nil {
+	${3:log.Fatal(err)}
+}
+
+```
+
+ioutil.TempDir:
+```go
+
+${1:tmpname}, err := ioutil.TempDir(${2:dir}, ${3:prefix})
+if err != nil {
+	${4:log.Fatal(err)}
+}
+
+```
+
+ioutil.TempFile:
+```go
+
+${1:f}, err := ioutil.TempFile(${2:dir}, ${3:prefix})
+if err != nil {
+	${4:log.Fatal(err)}
+}
+
+```
+
+ioutil.WriteFile:
+```go
+
+if err := ioutil.WriteFile(${1:filename}, ${2:data}, ${3:perm}); err != nil {
+	${4:log.Fatal(err)}
+}
+
+```
+
 json.Marshal:
 ```go
 
