@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:rc} := ioutil.NopCloser(${2:r})
+]]></content>
+	<tabTrigger>ioutil.NopCloser</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
