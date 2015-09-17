@@ -183,8 +183,7 @@ json.Unmarshal:
 ```go
 
 var ${2:dst} ${3:map[string]string}
-err := json.Unmarshal(${1:jsonBlob}, &${2:dst})
-if err != nil {
+if err := json.Unmarshal(${1:jsonBlob}, &${2:dst}); err != nil {
 	log.Fatal(err)
 }
 
